@@ -1,0 +1,29 @@
+{
+    "name": "SmileyRating",
+    "fields": [
+        {
+            "fieldName": "rating",
+            "fieldType": "Rating",
+            "fieldValues": "HAPPY,NEUTRAL,SAD,ANGRY"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "smileyRating",
+            "relationshipName": "user",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200329215100",
+    "entityTableName": "smiley_rating",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

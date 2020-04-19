@@ -25,6 +25,14 @@ public class SmileyRating implements Serializable {
     @Column(name = "rating")
     private Rating rating;
 
+    //should i declare enum here? or make a file somewhere else?
+    enum rating {
+        Happy,
+        Neutral,
+        Sad,
+        Angry
+    }
+
     @ManyToOne
     @JsonIgnoreProperties("smileyRatings")
     private User user;
